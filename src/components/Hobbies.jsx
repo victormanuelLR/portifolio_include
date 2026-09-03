@@ -1,6 +1,6 @@
 export default function Hobbies() {
     return (
-        <section>
+        <section id="hobbies">
             <h2>Hobbies Page</h2>
             <div >
                 <h3>Jogos</h3>

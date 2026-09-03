@@ -3,12 +3,12 @@ export default function Header() {
         <header>
             <nav>
                 <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Sobre</a></li>
-                    <li><a>Projetos</a></li>
-                    <li><a>Hobbies</a></li>
-                    <li><a>Formação</a></li>
-                    <li><a>Contato</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </header>
