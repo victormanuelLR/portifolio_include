@@ -1,8 +1,39 @@
+#projects > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    gap: 1rem;
+}
+
+
+#projects li > label {
+    display: block;
+    border: 1px solid;
+    width: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(201, 39, 28);
+    text-align: center;
+}
+
+
+
+#projects li > label > input {
+    display: none;
+}
+
+#projects li > label:has(input:checked) {
+    background-color: rgb(255, 123, 0);
+}
+
+
+
 #projects > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
 
 @media (max-width: 768px) {
     #projects > div {
@@ -12,8 +43,12 @@
 }
 
 @media (max-width: 480px) {
+    #projects > ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
     #projects > div {
         grid-template-columns: 1fr;
     }
+
     
 }

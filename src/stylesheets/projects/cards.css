@@ -1,10 +1,26 @@
+.floppy-link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.floppy-shadow {
+    filter: drop-shadow(10px 10px 1px );
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+.floppy-shadow:hover {
+  transform: translate(-3px, -5px);
+  filter: drop-shadow(15px 11px 2px );
+}
+
 .floppy-card {
   width: 220px;
   height: 220px;
   border-radius: 4px;
   background-color: #242837;
   position: relative;
-  box-shadow: 2px 2px 2px 1px rgb(4, 0, 0);
+  overflow: visible;
   clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);
   display: flex;
   flex-direction: column;
@@ -28,13 +44,12 @@
 }
 
 .floppy-img {
-  background-color: #f3f4f6;
+  background-color: var(--background-color);
   position: absolute;
   top: 25%;
   padding: 12px;
   width: 35%;
   border-radius: 2px;
-  color: #111;
   font-family: monospace;
   z-index: 1;
 }
@@ -47,11 +62,11 @@
 }
 
 .floppy-label {
-  background-color: #f3f4f6;
+  background-color: var(--background-color);
   padding: 12px;
   height: 45%;
   border-radius: 2px;
-  color: #111;
+  color: var(--font-color);
   font-family: monospace;
   z-index: 2;
 }

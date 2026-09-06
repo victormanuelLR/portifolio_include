@@ -1,47 +1,94 @@
-
-
 #hobbies > div {
     display: flex;
     flex-direction: row;
-    color: white;
-    background-color: rgb(218, 38, 38);
-    border: 1px solid black;
-    box-shadow: 10px 10px 1px black;
+    background-color: rgb(92, 142, 200);
+    border: 1px solid;
+    box-shadow: 10px 10px 1px;
     border-radius: 20px;
     gap: 1rem;
 }
 
+#hobbies > div:nth-child(even) {
+    flex-direction: row;
+    background-color: rgb(92, 142, 200);
+}
+
+#hobbies > div:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: rgb(218, 38, 38);
+}
+
 .hobbies_block {
-    padding: 10px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
+}
+
+.hobbies_block h3 {
+    color: var(--background-color);
 }
 
 .hobbies_block p {
-    margin-right: 1rem;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
+
 .disco_block {
-    padding: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 10px;
+    width: 45%;
     align-items: center;
     background-color: rgb(34, 35, 32);
+}
+
+
+
+#hobbies > div:nth-child(even) .disco_block {
+    flex-direction: row;
+    justify-content: right;
     border-radius: 70px 20px 20px 70px;
 }
 
-.disco_block  img {
+#hobbies > div:nth-child(even) .disco_block img {
+    margin-left: -23%;
+    margin-right: 0;
+}
+
+#hobbies > div:nth-child(even) .disco_block img:first-child {
+    margin-left: 0;
+}
+
+
+
+#hobbies > div:nth-child(odd) .disco_block {
+    flex-direction: row-reverse;
+    justify-content: left;
+    border-radius: 20px 70px 70px 20px;
+}
+
+#hobbies > div:nth-child(odd) .disco_block img {
+    margin-left: 0;
+    margin-right: -23%;
+}
+
+#hobbies > div:nth-child(odd) .disco_block img:first-child {
+    margin-right: 0;
+}
+
+
+
+
+.disco_block img {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-
-    margin-left: -23%
-}
-
-.disco_block img:first-child {
-    margin-left: 0;
+    object-fit: cover;
 }
 
 .disco_block img:nth-child(1) {
@@ -51,12 +98,138 @@
 .disco_block img:nth-child(2) {
     z-index: 2;
 }
+
 .disco_block img:nth-child(3) {
     z-index: 3;
 }
 
-.disco_block img:hover {
-    transform: translateX(-25%);
+
+
+#hobbies > div:nth-child(even) .disco_block img {
     transition: transform 0.3s ease-in-out;
 }
 
+#hobbies > div:nth-child(even) .disco_block img:hover {
+    transform: translateX(-25%);
+}
+
+#hobbies > div:nth-child(even) .disco_block img:nth-child(3):hover {
+    transform: translateX(-10%);
+}
+
+
+
+#hobbies > div:nth-child(odd) .disco_block img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#hobbies > div:nth-child(odd) .disco_block img:hover {
+    transform: translateX(25%);
+}
+
+#hobbies > div:nth-child(odd) .disco_block img:nth-child(3):hover {
+    transform: translateX(10%);
+}
+
+
+@media (max-width: 1024px) {
+
+    #hobbies > div {
+        gap: 0;
+        overflow: hidden;
+    }
+
+
+    #hobbies > div:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    #hobbies > div:nth-child(even) .disco_block {
+        width: 100%;
+        height: 180px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 20px 70px 70px;
+    }
+
+    #hobbies > div:nth-child(even) .disco_block img {
+        margin-left: -55px;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+
+    #hobbies > div:nth-child(even) .disco_block img:first-child {
+        margin-left: 0;
+    }
+
+
+
+    #hobbies > div:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    #hobbies > div:nth-child(odd) .disco_block {
+        width: 100%;
+        height: 180px;
+        padding: 10px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 20px 70px 70px;
+    }
+
+    #hobbies > div:nth-child(odd) .disco_block img {
+        margin-left: 0;
+        margin-right: -55px;
+        flex-shrink: 0;
+    }
+
+    #hobbies > div:nth-child(odd) .disco_block img:first-child {
+        margin-right: 0;
+    }
+
+
+    .hobbies_block {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+
+    #hobbies > div:nth-child(even) .disco_block {
+        height: 150px;
+    }
+
+    #hobbies > div:nth-child(even) .disco_block img {
+        width: 120px;
+        height: 120px;
+        margin-left: -45px;
+    }
+
+    #hobbies > div:nth-child(even) .disco_block img:first-child {
+        margin-left: 0;
+    }
+
+
+
+    #hobbies > div:nth-child(odd) .disco_block {
+        height: 150px;
+    }
+
+    #hobbies > div:nth-child(odd) .disco_block img {
+        width: 120px;
+        height: 120px;
+        margin-left: 0;
+        margin-right: -45px;
+    }
+
+    #hobbies > div:nth-child(odd) .disco_block img:first-child {
+        margin-right: 0;
+    }
+}
