@@ -4,7 +4,7 @@
 :root {
     --primary-color: rgb(92, 142, 200);
     --secondary-color: rgb(218, 38, 38);
-    --font-family: 'Arial', sans-serif;
+    --font-family: "raleway", "mona sans", "google sans", "montserrat";
     --font-color: #050505;
     --background-color: #fdfbf9;
     --body-background-color: white;
