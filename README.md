@@ -1,16 +1,106 @@
-# React + Vite
+# Portfólio — Victor Manuel
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica, projetos, interesses e conhecimentos na área de tecnologia.
 
-Currently, two official plugins are available:
+Desenvolvido como uma aplicação web utilizando **React, JavaScript e CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 📱 **Layout responsivo** para mobile, tablet e desktop
+* 🌓 **Modo claro e escuro**
+* 🗂️ **Sistema de filtragem** dos projetos
+* ⚡ **Animações e efeitos de interação**
+* 🧭 **Navegação entre as seções** do portfólio
+* 💻 **Apresentação de projetos**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Stack
 
-## Expanding the Oxlint configuration
+* **React**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
+* **Vite**
+* **Git**
+* **GitHub**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Como rodar localmente
+
+Pré-requisito: **Node.js** e **npm**.
+
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/victormanuelLR/portifolio_include.git
+
+# 2. Entrar na pasta
+cd portifolio_include
+
+# 3. Instalar as dependências
+npm install
+
+# 4. Rodar em modo desenvolvimento
+npm run dev
+```
+
+O projeto será disponibilizado no endereço indicado pelo Vite no terminal, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## 📦 Scripts
+
+| Comando           | O que faz                                |
+| ----------------- | ---------------------------------------- |
+| `npm run dev`     | Inicia o servidor de desenvolvimento     |
+| `npm run build`   | Gera o build de produção                 |
+| `npm run preview` | Visualiza localmente o build de produção |
+
+## 📁 Estrutura
+
+```text
+portfolio_include/
+├── public/
+│   ├── about/
+│   ├── education/
+│   ├── header/
+│   ├── hero/
+│   ├── hobbies/
+│   ├── logo/
+│   └── projects/
+│
+├── src/
+│   ├── components/
+│   │   └── Projects/
+│   ├── classes/
+│   ├── stylesheets/
+│   │   └── projects/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── MyButton.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── LICENSE
+└── README.md
+```
+
+## 🌐 Deploy
+
+O projeto está disponível online em:
+
+**[Portfólio — Victor Manuel](COLOQUE_AQUI_O_LINK_DO_DEPLOY)**
+
+## 📫 Contato
+
+* **GitHub:** [@victormanuelLR](https://github.com/victormanuelLR)
+* **LinkedIn:** [Victor Manuel Leal Ribeiro](https://www.linkedin.com/in/victor-manuel-leal-ribeiro-6a1765350/)
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+© 2026 Victor Manuel
