@@ -1,5 +1,5 @@
 import "../stylesheets/projects.css"
-import CardComponent from "./Projects/card";
+import CardComponent from "./Projects/Card";
 import Card, {filter} from "../classes/Card"
 import { useState } from "react";
 
