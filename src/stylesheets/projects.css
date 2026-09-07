@@ -12,21 +12,36 @@
     width: 50px;
     border-radius: 20px;
     padding: 5px;
-    background-color: rgb(201, 39, 28);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
+#projects li > label:hover {
+    background-color: color-mix(in srgb, var(--background-color), #000000 20%);
+}
 
+.dark #projects li > label:hover {
+    background-color: color-mix(in srgb, var(--background-color), #ffffff 20%);
+}
+
+#projects li > label:has(input:checked) {
+    background-color: var(--primary-color)
+}
+
+#projects li > label:has(input:checked):hover {
+    background-color: color-mix(in srgb, var(--primary-color), #000000 20%);
+}
+
+.dark #projects li > label:has(input:checked):hover {
+    background-color: color-mix(in srgb, var(--primary-color), #fffdfd 20%);
+}
 
 #projects li > label > input {
     display: none;
 }
-
-#projects li > label:has(input:checked) {
-    background-color: rgb(255, 123, 0);
-}
-
-
 
 #projects > div {
     display: grid;

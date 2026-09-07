@@ -3,8 +3,8 @@ import CardComponent from "./Projects/card";
 import Card, {filter} from "../classes/Card"
 import { useState } from "react";
 
-const inteliAr = new Card(1,"InteliAr", "../projects/InteliAr.jpeg", "logo InteliAR", "#1D87FF", "InteliAr é um projeto de monitoramento de presença humana para gerenciamento de ArCOndicionado", "#",["todos", "web"])
-const morseChat = new Card(2, "Morsechat", "../projects/Morsechat.png", "logo Morsechat", "#735345", "Morsechat é um projeto de chat em tempo real utilizando o código morse como forma de comunicação", "https://github.com/victormanuelLR/capicord",["todos", "python", "web"])
+const inteliAr = new Card(1,"InteliAr", "../projects/InteliAr.jpeg", "logo InteliAR", "#1D87FF", "InteliAr é um projeto de monitoramento de presença humana para gerenciamento de Ar-Condicionado", "https://github.com/diaslui/inteliAr",["todos", "web"])
+const morseChat = new Card(2, "Morsechat", "../projects/Morsechat.png", "logo Morsechat", "#735345", "Morsechat é um projeto de chat em tempo real, utilizando o framework django", "https://github.com/victormanuelLR/capicord",["todos", "python", "web"])
 const chessTerminal = new Card(3, "chessTerminal", "../projects/Chess_Terminal.png", "logo Chess Terminal", null, "Chess Terminal é um projeto de jogo de xadrez jogado no terminal, desenvolvido em C", "#",["todos", "c"]) 
 
 export default function Projects() {

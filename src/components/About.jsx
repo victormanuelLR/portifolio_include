@@ -26,7 +26,7 @@ export default function About() {
 
         <img
             className="about-image"
-            src="../profile/concon.jpeg"
+            src="../about/eu.jpeg"
             alt="Foto de Victor Manuel"
         />
 
